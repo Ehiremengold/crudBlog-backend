@@ -164,8 +164,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 cloudinary.config(
-  cloud_name=os.getenv('CLOUDINARY_URL').split('@')[-1],  # extract cloud_name from the URL
-  api_key=os.getenv('CLOUDINARY_URL').split(':')[1].split('@')[0],  # extract API key
-  api_secret=os.getenv('CLOUDINARY_URL').split(':')[2],  # extract API secret
+  cloud_name=os.getenv('CLOUDINARY_NAME'), 
+  api_key=os.getenv('CLOUDINARY_API_KEY'),  
+  api_secret=os.getenv('CLOUDINARY_API_SECRET')  
 )
 
