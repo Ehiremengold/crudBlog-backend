@@ -152,8 +152,8 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
-  os.getenv('FRONTEND_ORIGIN'),  # React development server
-  'https://crud-blog-frontend-hevqssxr4-ehiremengolds-projects.vercel.app'
+  "http://localhost:5173",
+  "http://crud-blog-frontend.vercel.app",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
